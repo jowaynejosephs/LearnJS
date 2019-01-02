@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shuffle Array</title>
+    <style>
+    /*#output{
+        width:500px;
+        height:30px;
+        border:1px solid black;
+    }*/
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <input type="button" onClick="start()" value="Start Gamej">
+    <script>
+        var animals = ["cat","dog", "lion", "zebra", "coyote", "tiger", "orca", "shark", "racoon", "tortoise"]
+        var output=document.getElementById("output")
+
+        function start(){
+            shuffleArray(animals)
+            output.innerHTML += animals + "<br>"
+        }
+
+        function shuffleArray(arr){
+            for(x=arr.length-1;x>0;x--){
+                var holder=Math.floor(Math.random()*(x+1))
+                var temp=arr[x]
+                arr[x]=arr[holder]
+                arr[holder]=temp
+            }
+            return arr
+        }
+</script>
+        
+
+
+    
+</body>
+</html>

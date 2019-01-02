@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remove Duplicates</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var output=document.getElementById("output")
+    //var myArray=["cat","dog","monkey","lion","dog","chimpanzee","spider","cat","ladybug","mouse","rat","chimpanzee"]
+    var mySecondArr=["jo","mary","ally","paul","jo","mary","ally"]
+    var myArrayClean=removeDup(mySecondArr)
+    output.innerHTML = mySecondArr + "<br>" +myArrayClean
+
+    function removeDup(arr){
+            var cArray = [];
+            var cObject={}
+            var z=""
+
+            for (var x=0; x<arr.length;x++){
+                //console.log(arr[x])
+                cObject[arr[x]]="whatever"
+            }
+            console.log(cObject)
+            for(z in cObject){
+                console.log(z)
+                cArray.push(z)
+            }
+
+            return cObject
+            return cArray
+    }
+    
+    </script>
+</body>
+</html>

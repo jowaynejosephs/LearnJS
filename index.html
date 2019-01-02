@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  td{
+    border:1px solid black;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <div id="output">
+   
+  </div>
+  <input type="button" onClick="myFun()" value="Click Me">
+
+
+  <!--<script>
+   var output = document.getElementById("output")
+   var caloriesBanana=89
+   var bananas = prompt("How many bananas do you want to eat?")
+   
+   var total=0
+
+   for (var x=1;x<=bananas;x++){
+    total +=caloriesBanana
+     if(x==1){
+      output.innerHTML+= "<h3>You ate 1 banana " + "so that's " + caloriesBanana +"calories"+ "<h3>"+"<br>"
+     }
+     else{ 
+    output.innerHTML+="You ate " + x + " banana another " + caloriesBanana + " calories <br>"
+    }
+    
+    }
+   
+
+    output.innerHTML +="The total amount of calories is " + total
+    </script>-->
+
+
+    <!--<script>
+      //Building out a table with a nested loop
+      var output = document.getElementById("output")
+      var html="<table>"
+
+      for(var row=0;row<10;row++){
+        if(row==5){
+         // break //Stops the execution of the loop at a certain condition
+        }
+
+        if(row===5){
+          continue //opposite of break
+        }
+        html+="<tr>"
+        for (var col =0; col < 5;col++){
+          html+="<td>Cell= "+(col+1)+(row+1)+"</td>"
+        }
+        html+= "</tr>"
+      }
+
+      html+="</table>"
+      output.innerHTML=html
+
+    
+    </script>-->
+
+    <!--<script>
+      //Loop to 1000
+      //Get all numbers multipls of 5 and add them together
+      //out put the numbers being added together
+      //output total after loop completes 
+
+       var output = document.getElementById("output")
+       var total =0;
+       for (var i=0; i<1000;i++){
+        if(i%5==0){
+          total+=i
+          output.innerHTML+="value of "+ i +" subtotal =" +total + "<br>"
+       }
+       }
+       output.innerHTML+="Total: "+total
+
+       
+    
+    </script>-->
+
+    <script>
+     
+     //var userNames = ["mike","john","larry"]
+        /*userNames.forEach(example => {
+      output.innerHTML+="Users: "+example+"<br>"
+     })*/ //alternative looping through an array
+
+     /*for(var i=0;i<userNames.length;i++){
+       output.innerHTML+="The users are: "+ userNames[i]+"<br>"*/
+
+     /* var i=0;
+      while (userNames[i]){
+        output.innerHTML+="The users are: "+ userNames[i]+"<br>"
+        i++
+      }*/
+
+     /* for(var i=userNames.length-1;i>=0;i--){
+        output.innerHTML+="The users are: "+ userNames[i]+"<br>"
+      }*/
+
+      /*for (i of userNames){
+        console.log(i)
+      }*/
+
+    /*var output = document.getElementById("output")
+    var addItem;
+    var shoppingList=[];
+    var howManyTimes=prompt("How many items would you like to add?")
+   
+
+      for(var x=0;x<howManyTimes;x++){
+        addItem= prompt("What do you want to add?");
+        if(addItem=="no"){
+          break
+        }
+        shoppingList.push(addItem)
+      }
+
+   for(myItem of shoppingList){
+     output.innerHTML += myItem + "<br>"
+   }*/
+
+
+
+   //FUNCTIONS!
+   /*var output = document.getElementById("output")
+   var response ="55"
+   var a = "hello"
+   myFun1(4,5,6)*/
+
+   /*function myFun2(){
+     var b =a + " "+" world"
+     return b
+   }*/
+ 
+/* output.innerHTML=myFun2()
+   
+   function myFun1(a,b,c){
+      response=a+b+c  //global
+      var response=a+b+c //local
+      output.innerHTML=response
+      return response
+   }*/
+
+var adj=["super", "smart","spontaneous","happy","ambitious","clean"]
+
+var output = document.getElementById("output")
+
+
+function myFun(){
+  var question = prompt("What is your name?")
+  var descriptor=Math.floor(Math.random()*adj.length)
+  output.innerHTML+="Your name is " +adj[descriptor]+" "+ question
+}
+
+
+
+
+     
+
+  
+
+    
+    
+    </script>
+</body>
+</html>
